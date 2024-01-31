@@ -3,8 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import AuthLayout from "../layout/AuthLayout";
 import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
-import Login from "../pages/Authentication/Login";
-import Register from "../pages/Authentication/Register";
+import Login from "../pages/User/Login";
+import Register from "../pages/User/Register";
 import PublicRoute from "./PublicRoute";
 import PrivateRoute from "./PrivateRoute";
 import CreateFeatureRequest from "../components/Feature/CreateFeatureRequest";
@@ -14,7 +14,7 @@ import AdminRoutes from "./AdminRoutes";
 import FeatureRequests from "../pages/Admin/FeatureRequests";
 import AllUsers from "../pages/Admin/AllUsers";
 import SiteSettings from "../pages/Admin/SiteSettings";
-import Profile from "../pages/Profile";
+import Profile from "../pages/User/Profile";
 import Dashboard from "../pages/Admin/Dashboard";
 
 export const router = createBrowserRouter([

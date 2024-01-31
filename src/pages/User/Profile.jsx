@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { demoAdmin, userPageBg } from "../assets/images/images";
-import { UserContext } from "../context/UserContextProvider";
-import Breadcrumbs from "../components/Breadcrumbs";
-import Loader from "../components/Loader";
-import CustomHelmet from "../components/CustomComponents/CustomHelmet";
+import { demoAdmin, userPageBg } from "../../assets/images/images";
+import { UserContext } from "../../context/UserContextProvider";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Loader from "../../components/Loader";
+import CustomHelmet from "../../components/CustomComponents/CustomHelmet";
 
 const Profile = () => {
   const { userDetails, isLoading } = useContext(UserContext);

@@ -8,7 +8,7 @@ Welcome to the Feature Request Board Documentation. This guide is designed for u
 
 ## Accessing the Feature Request Board
 
-To access the Feature Request Board, visit [Feature Request Board Live Link](https://mahmud-feature-request-board.vercel.app). Follow these instructions:
+To access the Feature Request Board, visit [Feature Request Board Live Link](https://feature-request-board.vercel.app/). Follow these instructions:
 
 ## For Full Access To Feature Details
 
@@ -85,13 +85,13 @@ Make sure you have the following installed on your machine:
 ### Clone the Frontend Repository
 
 ```bash
-git clone https://github.com/mahmud-bhuiyan/SJI-feature-request-board.git
+git clone https://github.com/mahmud-bhuiyan/feature-request-board.git
 ```
 
 ### Install dependencies
 
 ```bash
-cd SJI-feature-request-board
+cd feature-request-board
 npm install
 ```
 
@@ -121,13 +121,13 @@ Access the application in a web browser at `http://localhost:5173/`.
 ### Clone the Backend Repository
 
 ```bash
-git clone https://github.com/mahmud-bhuiyan/SJI-feature-request-board-api.git
+git clone https://github.com/mahmud-bhuiyan/feature-request-board-server.git
 ```
 
 ### Install dependencies
 
 ```bash
-cd SJI-feature-request-board-api
+cd feature-request-board-server
 npm install
 ```
 
@@ -173,5 +173,3 @@ DB_NAME=your_DB_NAME
 The Feature Request Board is a collaborative space for users and developers to shape the future of application development.
 
 For any additional questions or support, contact [bh.mahmud@gmail.com].
-
-Many Thanks to `SJ Innovation` and `Project MearnifyU Team` For Your Support!

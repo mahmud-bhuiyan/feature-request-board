@@ -2,9 +2,13 @@ import { MdOutlineAdminPanelSettings, MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import { makeAdmin, softDeleteUserById } from "../../services/apis/Admin";
+import { FeaturesContext } from "../../../../frontend/src/context/FeaturesContextProvider";
+import { useContext } from "react";
 
-const AllUsersData = ({ user, index, setRefetch }) => {
+const AllUsersData = ({ user, index, setRefresh }) => {
   const { _id, name, email, role } = user;
+
+  const { setRefetch } = useContext(FeaturesContext);
 
   const showConfirmationDialog = async (title, text, actionType) => {
     return Swal.fire({
@@ -38,6 +42,7 @@ const AllUsersData = ({ user, index, setRefetch }) => {
             ? await makeAdmin(_id)
             : await softDeleteUserById(_id);
 
+        setRefresh((prevRefresh) => !prevRefresh);
         setRefetch((prevRefetch) => !prevRefetch);
         showToast(response.message);
       } catch (error) {

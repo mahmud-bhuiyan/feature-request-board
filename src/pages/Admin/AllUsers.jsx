@@ -16,7 +16,7 @@ const AllUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
   const [sortColumn, setSortColumn] = useState("name");
   const [sortOrder, setSortOrder] = useState("asc");
-  const [refetch, setRefetch] = useState(false);
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -30,7 +30,7 @@ const AllUsers = () => {
     };
 
     fetchUsers();
-  }, [setAllUsers, currentPage, itemsPerPage, refetch]);
+  }, [setAllUsers, currentPage, itemsPerPage, refresh]);
 
   // Calculate total pages for pagination
   const totalPages = Math.ceil(totalUsers / itemsPerPage);
@@ -145,7 +145,7 @@ const AllUsers = () => {
                         key={user._id}
                         user={user}
                         index={index}
-                        setRefetch={setRefetch}
+                        setRefresh={setRefresh}
                       />
                     ))}
                   </tbody>
